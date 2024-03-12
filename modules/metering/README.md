@@ -35,4 +35,5 @@ No modules.
 | Name | Description |
 |------|-------------|
 | <a name="output_metering_password"></a> [metering\_password](#output\_metering\_password) | n/a |
+| <a name="output_metering_username"></a> [metering\_username](#output\_metering\_username) | n/a |
 <!-- END_TF_DOCS -->

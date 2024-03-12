@@ -35,4 +35,5 @@ No modules.
 | Name | Description |
 |------|-------------|
 | <a name="output_replicator_password"></a> [replicator\_password](#output\_replicator\_password) | n/a |
+| <a name="output_replicator_username"></a> [replicator\_username](#output\_replicator\_username) | n/a |
 <!-- END_TF_DOCS -->

@@ -65,5 +65,7 @@ No resources.
 | Name | Description |
 |------|-------------|
 | <a name="output_metering_password"></a> [metering\_password](#output\_metering\_password) | n/a |
+| <a name="output_metering_username"></a> [metering\_username](#output\_metering\_username) | n/a |
 | <a name="output_replicator_password"></a> [replicator\_password](#output\_replicator\_password) | n/a |
+| <a name="output_replicator_username"></a> [replicator\_username](#output\_replicator\_username) | n/a |
 <!-- END_TF_DOCS -->

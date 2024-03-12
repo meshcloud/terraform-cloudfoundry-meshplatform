@@ -1,5 +1,7 @@
 resource "random_password" "metering" {
-  length = 32
+  length           = 32
+  special          = true
+  override_special = "!@#$=+"
 }
 
 resource "cloudfoundry_user" "metering" {
