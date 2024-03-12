@@ -20,11 +20,11 @@ terraform {
 }
 
 provider "cloudfoundry" {
-  api_url             = "https://api.<cf-domain>" # Your Cloud Foundry API Url
-  user                = "admin"
-  password            = "..." # cf admin password
-  uaa_client_id       = "admin"
-  uaa_client_secret   = "..." # uaa admin client secret
+  api_url             = "https://api.<cf-domain>" # Your Cloud Foundry API Url. Or set CF_API_URL env var
+  user                = "admin"                   # cf admin user. Or set CF_USER env var
+  password            = "..."                     # cf admin password. Or set CF_PASSWORD env var
+  uaa_client_id       = "admin"                   # uaa admin client id. Or set CF_UAA_CLIENT_ID env var
+  uaa_client_secret   = "..."                     # uaa admin client secret. Or set CF_UAA_CLIENT_SECRET env var
   skip_ssl_validation = true
   app_logs_max        = 30
 }
@@ -32,5 +32,5 @@ provider "cloudfoundry" {
 module "meshplatform" {
   source = "../../"
   # note: for production use we recommend using a pinned version of the module like so
-  # source = "git::https://github.com/meshcloud/terraform-cloudfoundry-meshplatform.git?ref=<commit-id>"
+  # source = "git::https://github.com/meshcloud/terraform-cloudfoundry-meshplatform.git?ref=<commit-hash>"
 }

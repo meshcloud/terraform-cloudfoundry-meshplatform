@@ -8,6 +8,13 @@ To run this module, you need to use cloud foundry admin user and UAA admin clien
 
 You can create an admin user with [UAA CLI](https://docs.cloudfoundry.org/uaa/uaa-user-management.html#creating-admin-users).
 
+## How to Use This Module
+
+1. [Install Terraform](https://developer.hashicorp.com/terraform/install)
+2. Create a file structure as shown in [Example Usages](#example-usages)
+3. Once resources are created via `terraform init` and `terraform apply`, use `terraform output -json` to view the generated passwords of replicator and metering (if none were provided as inputs)
+4. Copy the usernames/passwords into your Cloud Foundry meshplatform configuration
+
 ## Example Usages
 
 Check [examples](./examples/) for different use cases. As a quick start we recommend using [basic-integration](./examples/basic-integration) example.
