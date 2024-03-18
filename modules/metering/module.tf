@@ -9,6 +9,6 @@ resource "cloudfoundry_user" "metering" {
   password = var.metering_password == "thisvalueisnotactuallyused" ? random_password.metering.result : var.metering_password
 
   groups = [
-    "cloud_controller.admin",
+    "cloud_controller.global_auditor",
   ]
 }
